@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>dom 查询</title>
+    <link rel="stylesheet" type="text/css" href="style/css.css"/>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var divObj = document.createElement("div"); // 在内存中<div></div>
+            var textNodeObj = document.createTextNode("国哥，我爱你"); // 有一个文本节点对象#国哥，我            爱你
+            divObj.appendChild(textNodeObj); // <div>国哥，我爱你</div>
+
+            document.body.appendChild(divObj);
+        }
+
+    </script>
+</head>
+<body>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" type="text/css" href="styleB/css.css"/>
+    <script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var deleteFun = function () {
+                var $trObj = $(this).parent().parent()//获取连接的父元素父元素
+                var name = $trObj.find("td:first").text();//获取连接父元素的第一个td文本内容
+                var isDel=confirm("你确定要删除[" + name + "]吗？")//返回多行提示的内容
+				if (isDel){
+					$trObj.remove() //删除
+				}
+                return false;//禁止连接跳转
+            }
+            //添加
+            $("#addEmpButton").click(function () {
+                var name = $("[name=empName]").val()
+                var email = $("[name=email]").val()
+                var salary = $("[name=salary]").val()
+                var $trObj = $("<tr>" +
+                    "<td>" + name + "</td>" +
+                    "<td>" + email + "</td>" +
+                    "<td>" + salary + "</td>" +
+                    "<td><a href='#'>Delete</a></td>" +
+                    "</tr>");
+                $trObj.appendTo($("#employeeTable")) //添加对象
+				$trObj.find("a").click(deleteFun);   //绑定删除事件
+            })
+
+            //删除调用
+
+            $("a").click(deleteFun)
+
+            //删除用户的方法
+
+        })
+
+    </script>
+</head>
+<body>
+
+<table id="employeeTable">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>&nbsp;</th>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>tom@tom.com</td>
+        <td>5000</td>
+        <td><a href="deleteEmp?id=001">Delete</a></td>
+    </tr>
+    <tr>
+        <td>Jerry</td>
+        <td>jerry@sohu.com</td>
+        <td>8000</td>
+        <td><a href="deleteEmp?id=002">Delete</a></td>
+    </tr>
+    <tr>
+        <td>Bob</td>
+        <td>bob@tom.com</td>
+        <td>10000</td>
+        <td><a href="deleteEmp?id=003">Delete</a></td>
+    </tr>
+</table>
+
+<div id="formDiv">
+
+    <h4>添加新员工</h4>
+
+    <table>
+        <tr>
+            <td class="word">name:</td>
+            <td class="inp">
+                <input type="text" name="empName" id="empName"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="word">email:</td>
+            <td class="inp">
+                <input type="text" name="email" id="email"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="word">salary:</td>
+            <td class="inp">
+                <input type="text" name="salary" id="salary"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button id="addEmpButton" value="abc">
+                    Submit
+                </button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
+
+$("#addEmpButton").click(function () {
+var name = $("[name=empName]").val()
+var email = $("[name=email]").val()
+var salary = $("[name=salary]").val()
+var $trObj = $("<tr>" +
+	"<td>" + name + "</td>" +
+	"<td>" + email + "</td>" +
+	"<td>" + salary + "</td>" +
+	"<td><a href='#'>Delete</a></td>" +
+	"</tr>");
+$trObj.appendTo($("#employeeTable")) //添加对象
+$trObj.find("a").click(deleteFun);   //绑定删除事件
+})

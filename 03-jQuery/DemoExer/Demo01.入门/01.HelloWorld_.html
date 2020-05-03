@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+
+
+		$(function () {//表示页面加载完成 之后，相当 window.onload=functiong(){}
+
+			var arr=[12,"abc",true];
+			var $btns=$("button");
+			// for (var i = 0; i < $btns.length; i++) {
+			// 	alert($btns[i]);
+			//
+			// }
+			// document.getElementById("btnId").innerHTML="这是Dom对象的属性InnerHTML";
+			 alert($(document.getElementById("btnId"))[0]);
+
+
+		})
+	</script>
+</head>
+<body>
+
+	<div id="btnId">SayHello</div>
+<button id="dom2dom">使用DOM对象调用 Dom方法</button>
+<button id="dom2jQuery">使用DOM对象调用 jQuery方法</button>
+<button id="jQuery2jQuery">使用jQuery对象调用 jQuery方法</button>
+<button id="jQuery2DOM">使用jQuery对象调用 Dom方法</button>
+</body>
+</html>

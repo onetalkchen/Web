@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+    <script type="text/javascript">
+        // var patt=new RegExp("e");
+        // var str1="abcd";
+        // var str2="abcde";
+        // alert(patt.test(str1)); //false
+        // alert(patt.test(str2));//true
+        // //方式二
+        // var patt=/e/;
+        // alert(patt.test(str1));//false
+        // alert(patt.test(str2));//true
+
+
+
+        var patt = /^a{3,5}$/;    //要求字符串，从头到到尾必须完全匹配
+
+        var str1 = "aaaaaa"
+        alert(patt.test(str1));  //调用
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_JavaTest/00_JavaTest.iml" filepath="$PROJECT_DIR$/00_JavaTest/00_JavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_JavaScript/02_JavaScript.iml" filepath="$PROJECT_DIR$/02_JavaScript/02_JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-jQuery/03-jQuery.iml" filepath="$PROJECT_DIR$/03-jQuery/03-jQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-xml/05-xml.iml" filepath="$PROJECT_DIR$/05-xml/05-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_web/05_web.iml" filepath="$PROJECT_DIR$/05_web/05_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_servlet/06_servlet.iml" filepath="$PROJECT_DIR$/06_servlet/06_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_servlet/07_servlet.iml" filepath="$PROJECT_DIR$/07_servlet/07_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaTest/JavaTest.iml" filepath="$PROJECT_DIR$/JavaTest/JavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jdbc_2/Jdbc_2.iml" filepath="$PROJECT_DIR$/Jdbc_2/Jdbc_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project_Pbook/Project_Pbook.iml" filepath="$PROJECT_DIR$/Project_Pbook/Project_Pbook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web.iml" filepath="$PROJECT_DIR$/Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book/book.iml" filepath="$PROJECT_DIR$/book/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc_1/jdbc_1.iml" filepath="$PROJECT_DIR$/jdbc_1/jdbc_1.iml" />
+    </modules>
+  </component>
+</project>
